@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div className='header'>
             <PlayerDisplay player='X' />
-            <Scoreboard gameWinner='X Wins!' playerOne='5' playerTwo='4' />
+            <Scoreboard gameWinner='X Wins!' playerOneScore='5' playerTwoScore='4' />
             <PlayerDisplay player='O' />
         </div>
     );
