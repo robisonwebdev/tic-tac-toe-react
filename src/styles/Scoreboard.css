@@ -8,3 +8,13 @@
     height: auto;
     width: auto;
 }
+
+.scores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+    width: auto;
+}
