@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Scoreboard = ({ gameWinner }) => {
+const Scoreboard = ({ gameWinner, playerOne, playerTwo }) => {
     return (
         <div className='scoreboard'>
-            <div>score</div>
+            <div className='scores'>
+                <p>{playerOne} | {playerTwo}</p>
+            </div>
             <p>{gameWinner}</p>
         </div>
     );
