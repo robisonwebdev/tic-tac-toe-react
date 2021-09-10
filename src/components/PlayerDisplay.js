@@ -1,8 +1,10 @@
 import React from 'react';
 
-const PlayerDisplay = () => {
+const PlayerDisplay = ({ player }) => {
     return (
-        <div>PlayerDisplay</div>
+        <div className='playerDisplay'>
+            <h1>{player}</h1>
+        </div>
     );
 }
 
