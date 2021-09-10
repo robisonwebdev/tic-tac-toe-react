@@ -1,12 +1,13 @@
 import React from 'react';
 import PlayerDisplay from './PlayerDisplay';
+import Scoreboard from './Scoreboard';
 import '../styles/Header.css';
 
 const Header = () => {
     return (
         <div className='header'>
             <PlayerDisplay player='X' />
-            <div>2</div>
+            <Scoreboard />
             <PlayerDisplay player='O' />
         </div>
     );
