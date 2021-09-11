@@ -1,8 +1,10 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer = ({ address, name, text }) => {
     return (
-        <div>FOOTER</div>
+        <footer>
+            <small>{text}<a href={address} target='_blank' rel='noreferrer'>{name}</a></small>
+        </footer>
     );
 }
 
