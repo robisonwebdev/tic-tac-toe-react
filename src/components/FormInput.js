@@ -1,8 +1,11 @@
 import React from 'react';
 
-const FormInput = () => {
+const FormInput = ({ labelText, placeholder, type}) => {
     return (
-        <input />
+        <label>
+            {labelText}
+            <input type={type} placeholder={placeholder} />
+        </label>
     );
 }
 
