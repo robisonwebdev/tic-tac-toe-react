@@ -5,11 +5,11 @@ import '../styles/Header.css';
 
 const Header = () => {
     return (
-        <div className='header'>
+        <header>
             <PlayerDisplay player='X' />
             <Scoreboard gameWinner='X Wins!' playerOneScore='5' playerTwoScore='4' />
             <PlayerDisplay player='O' />
-        </div>
+        </header>
     );
 }
 
