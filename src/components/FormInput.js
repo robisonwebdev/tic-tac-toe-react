@@ -1,8 +1,8 @@
 import React from 'react';
 
-const FormInput = ({ labelText, placeholder, type}) => {
+const FormInput = ({ className, labelText, placeholder, type}) => {
     return (
-        <label>
+        <label className={className}>
             {labelText}
             <input type={type} placeholder={placeholder} />
         </label>
