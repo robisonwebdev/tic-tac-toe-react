@@ -1,5 +1,6 @@
 import React from 'react';
 import FormInput from './FormInput';
+import '../styles/ControlBoard.css';
 
 const ControlBoard = () => {
     return (
