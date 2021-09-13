@@ -6,7 +6,6 @@ import '../styles/ControlBoard.css';
 const ControlBoard = ({ playerOne, playerTwo, setPlayerOne, setPlayerTwo }) => {
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log('Submit Clicked!');
     }
 
     return (
@@ -15,16 +14,16 @@ const ControlBoard = ({ playerOne, playerTwo, setPlayerOne, setPlayerTwo }) => {
                 <FormInput
                     className='playerLabel'
                     labelText='Player X'
-                    onChange={setPlayerOne}
                     placeholder='Enter Player 1'
+                    setPlayer={setPlayerOne}
                     type='text'
                     value={playerOne}
                 />
                 <FormInput
                     className='playerLabel'
                     labelText='Player O'
-                    onChange={setPlayerTwo}
                     placeholder='Enter Player 2'
+                    setPlayer={setPlayerTwo}
                     type='text'
                     value={playerTwo}
                 />
