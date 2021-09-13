@@ -14,6 +14,8 @@ const App = () => {
       <Main
         playerOne={playerOne}
         playerTwo={playerTwo}
+        setPlayerOne={setPlayerOne}
+        setPlayerTwo={setPlayerTwo}
       />
       <Footer
         address='https://github.com/robisonwebdev'
