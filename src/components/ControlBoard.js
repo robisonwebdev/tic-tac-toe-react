@@ -13,6 +13,7 @@ const ControlBoard = ({ playerOne, playerTwo, setPlayerOne, setPlayerTwo }) => {
                         playerTwo={playerTwo}
                         setPlayerOne={setPlayerOne}
                         setPlayerTwo={setPlayerTwo}
+                        setShowForm={setShowForm}
                     />
                 :   null
             }
