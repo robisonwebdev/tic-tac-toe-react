@@ -7,12 +7,15 @@ const ControlBoard = ({ playerOne, playerTwo, setPlayerOne, setPlayerTwo }) => {
 
     return (
         <div className='controlBoard'>
-            <GameForm 
-                playerOne={playerOne}
-                playerTwo={playerTwo}
-                setPlayerOne={setPlayerOne}
-                setPlayerTwo={setPlayerTwo}
-            />
+            {showForm 
+                ?   <GameForm 
+                        playerOne={playerOne}
+                        playerTwo={playerTwo}
+                        setPlayerOne={setPlayerOne}
+                        setPlayerTwo={setPlayerTwo}
+                    />
+                :   null
+            }
         </div>
     );
 }
