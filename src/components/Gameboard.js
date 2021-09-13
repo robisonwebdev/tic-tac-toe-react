@@ -2,7 +2,7 @@ import React from 'react';
 
 const Gameboard = () => {
     return (
-        <div>Gameboard</div>
+        <div className='gameboard'>Gameboard</div>
     );
 }
 
