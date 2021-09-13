@@ -1,8 +1,32 @@
 import React from 'react';
+import FormInput from './FormInput';
+import Button from './Button';
 
-const GameForm = () => {
+const GameForm = ({ playerOne, playerTwo, setPlayerOne, setPlayerTwo }) => {
+    const handleSubmit = (event) => {
+        event.preventDefault();
+    }
+    
     return (
-        <form></form>
+        <form onSubmit={handleSubmit}>
+            <FormInput
+                className='playerLabel'
+                labelText='Player X'
+                placeholder='Enter Player 1'
+                setPlayer={setPlayerOne}
+                type='text'
+                value={playerOne}
+            />
+            <FormInput
+                className='playerLabel'
+                labelText='Player O'
+                placeholder='Enter Player 2'
+                setPlayer={setPlayerTwo}
+                type='text'
+                value={playerTwo}
+            />
+            <Button text='Start!' type='submit' />
+    </form>
     );
 }
 
