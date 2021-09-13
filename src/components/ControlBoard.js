@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import GameForm from './GameForm';
+import GameReset from './GameReset';
 import '../styles/ControlBoard.css';
 
 const ControlBoard = ({ playerOne, playerTwo, setPlayerOne, setPlayerTwo }) => {
     const [showForm, setShowForm] = useState(true);
+    const [showGameReset, setShowGameReset] = useState(false);
 
     return (
         <div className='controlBoard'>
@@ -16,6 +18,10 @@ const ControlBoard = ({ playerOne, playerTwo, setPlayerOne, setPlayerTwo }) => {
                         setShowForm={setShowForm}
                     />
                 :   null
+            }
+            {showGameReset
+                ? <GameReset />
+                : null
             }
         </div>
     );
