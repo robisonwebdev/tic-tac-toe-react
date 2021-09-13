@@ -11,8 +11,15 @@ const App = () => {
   return (
     <div className='app'>
       <Header />
-      <Main />
-      <Footer address='https://github.com/robisonwebdev' name='David Robison' text='Developed by ' />
+      <Main
+        playerOne={playerOne}
+        playerTwo={playerTwo}
+      />
+      <Footer
+        address='https://github.com/robisonwebdev'
+        name='David Robison'
+        text='Developed by '
+      />
     </div>
   );
 }
