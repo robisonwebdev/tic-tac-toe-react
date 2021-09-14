@@ -7,6 +7,11 @@ const GameReset = ({ setShowForm, setShowGameReset }) => {
         setShowGameReset(false);
     }
 
+    const handleQuit = () => {
+        setShowForm(true);
+        setShowGameReset(false)
+    }
+
     return (
         <div className='gameReset'>
             <Button text='Play Again' onClick={handlePlayAgain} />
