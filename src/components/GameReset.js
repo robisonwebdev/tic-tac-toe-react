@@ -1,7 +1,12 @@
 import React from 'react';
 import Button from './Button';
 
-const GameReset = () => {
+const GameReset = ({ setShowForm, setShowGameReset }) => {
+    const handlePlayAgain = () => {
+        setShowForm(true);
+        setShowGameReset(false);
+    }
+
     return (
         <div className='gameReset'>
             <Button text='Play Again' />
