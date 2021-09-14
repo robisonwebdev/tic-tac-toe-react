@@ -15,7 +15,7 @@ const GameReset = ({ setShowForm, setShowGameReset }) => {
     return (
         <div className='gameReset'>
             <Button text='Play Again' onClick={handlePlayAgain} />
-            <Button text='Quit' />
+            <Button text='Quit' onClick={handleQuit} />
         </div>
     );
 }
