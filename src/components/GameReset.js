@@ -8,6 +8,8 @@ const GameReset = ({ setPlayerOne, setPlayerTwo, setShowForm, setShowGameReset }
     }
 
     const handleQuit = () => {
+        setPlayerOne('');
+        setPlayerTwo('');
         setShowForm(true);
         setShowGameReset(false)
     }
