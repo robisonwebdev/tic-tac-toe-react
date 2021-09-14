@@ -21,8 +21,11 @@ const ControlBoard = ({ playerOne, playerTwo, setPlayerOne, setPlayerTwo }) => {
                 :   null
             }
             {showGameReset
-                ? <GameReset />
-                : null
+                ?   <GameReset
+                        setShowForm={setShowForm}
+                        setShowGameReset={setShowGameReset}
+                    />
+                :   null
             }
         </div>
     );
