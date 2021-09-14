@@ -3,11 +3,15 @@ import PlayerDisplay from './PlayerDisplay';
 import Scoreboard from './Scoreboard';
 import '../styles/Header.css';
 
-const Header = () => {
+const Header = ({ playerOneScore, playerTwoScore }) => {
     return (
         <header>
             <PlayerDisplay player='X' />
-            <Scoreboard gameWinner='X Wins!' playerOneScore='5' playerTwoScore='4' />
+            <Scoreboard
+                gameWinner='X Wins!'
+                playerOneScore={playerOneScore}
+                playerTwoScore={playerTwoScore}
+            />
             <PlayerDisplay player='O' />
         </header>
     );
