@@ -8,7 +8,7 @@ const FormInput = ({ className, labelText, placeholder, setPlayer, type, value})
     return (
         <label className={className}>
             {labelText}
-            <input type={type} onChange={handleChange} placeholder={placeholder} value={value} />
+            <input type={type} onChange={handleChange} placeholder={placeholder} value={value} required />
         </label>
     );
 }
