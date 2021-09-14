@@ -22,6 +22,8 @@ const ControlBoard = ({ playerOne, playerTwo, setPlayerOne, setPlayerTwo }) => {
             }
             {showGameReset
                 ?   <GameReset
+                        setPlayerOne={setPlayerOne}
+                        setPlayerTwo={setPlayerTwo}
                         setShowForm={setShowForm}
                         setShowGameReset={setShowGameReset}
                     />
