@@ -12,7 +12,10 @@ const App = () => {
 
   return (
     <div className='app'>
-      <Header />
+      <Header
+        playerOneScore={playerOneScore}
+        playerTwoScore={playerTwoScore}
+      />
       <Main
         playerOne={playerOne}
         playerTwo={playerTwo}
