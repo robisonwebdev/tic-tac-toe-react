@@ -1,4 +1,5 @@
 import React from 'react';
+import GameSquare from './GameSquare';
 
 const Gameboard = () => {
     return (
