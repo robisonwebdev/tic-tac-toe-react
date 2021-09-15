@@ -1,9 +1,12 @@
 import React from 'react';
 import GameSquare from './GameSquare';
+import '../styles/Gameboard.css';
 
 const Gameboard = () => {
     return (
-        <div className='gameboard'>Gameboard</div>
+        <div className='gameboard'>
+            <GameSquare />
+        </div>
     );
 }
 
