@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
-const GameReset = ({ setPlayerOne, setPlayerTwo, setShowForm, setShowGameReset }) => {
+const GameReset = ({ setPlayerOne, setPlayerTwo, setShowForm, setShowGameReset, setStartGame }) => {
     const handlePlayAgain = () => {
         setShowForm(true);
         setShowGameReset(false);
@@ -11,7 +11,8 @@ const GameReset = ({ setPlayerOne, setPlayerTwo, setShowForm, setShowGameReset }
         setPlayerOne('');
         setPlayerTwo('');
         setShowForm(true);
-        setShowGameReset(false)
+        setShowGameReset(false);
+        setStartGame(false);
     }
 
     return (
