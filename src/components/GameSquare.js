@@ -3,7 +3,7 @@ import '../styles/GameSquare.css';
 
 const GameSquare = ({ onClick, id, value }) => {
     return (
-        <div className='gameSquare' onClick={() => onClick(id)} squareID={id}>
+        <div className='gameSquare' onClick={() => onClick(id, value)} squareID={id}>
             {value}
         </div>
     );
