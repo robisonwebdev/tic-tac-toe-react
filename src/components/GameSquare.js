@@ -10,7 +10,7 @@ const GameSquare = ({ onClick, id, value }) => {
         }
     }
     return (
-        <div className='gameSquare' onClick={handleClick} squareID={id}>
+        <div className='gameSquare' onClick={handleClick} square_id={id}>
             {value}
         </div>
     );
