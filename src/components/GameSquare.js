@@ -1,9 +1,11 @@
 import React from 'react';
 import '../styles/GameSquare.css';
 
-const GameSquare = () => {
+const GameSquare = ({ squareValue }) => {
     return (
-        <div className='gameSquare'></div>
+        <div className='gameSquare'>
+            {squareValue}
+        </div>
     );
 }
 
