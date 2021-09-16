@@ -2,11 +2,12 @@ import React from 'react';
 import FormInput from './FormInput';
 import Button from './Button';
 
-const GameForm = ({ playerOne, playerTwo, setPlayerOne, setPlayerTwo, setShowForm, setShowGameReset }) => {
+const GameForm = ({ playerOne, playerTwo, setPlayerOne, setPlayerTwo, setShowForm, setShowGameReset, setStartGame }) => {
     const handleSubmit = (event) => {
         event.preventDefault();
         setShowForm(false);
         setShowGameReset(true);
+        setStartGame(true);
     }
 
     return (
