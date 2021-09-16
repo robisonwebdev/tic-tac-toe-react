@@ -3,7 +3,7 @@ import GameSquare from './GameSquare';
 import squareData from '../squareData';
 import '../styles/Gameboard.css';
 
-const Gameboard = () => {
+const Gameboard = ({ startGame }) => {
     const [boardData, setBoardData] = useState(squareData);
 
     const placeMarker = (id, value) => {
@@ -20,7 +20,10 @@ const Gameboard = () => {
     }
 
     const buildSquares = boardData.map(square => {
-        return <GameSquare key={square.id} onClick={placeMarker} id={square.id} value={square.value} />
+        if (startGame) {
+            return <GameSquare key={square.id} onClick={placeMarker} id={square.id} value={square.value} />
+        }
+        return <GameSquare key={square.id} />;
     })
 
     return (
