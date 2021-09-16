@@ -1,39 +1,39 @@
 let squareData = [
     {
-        number: 1,
+        id: 1,
+        value: 'X'
+    },
+    {
+        id: 2,
         value: null
     },
     {
-        number: 2,
+        id: 3,
         value: null
     },
     {
-        number: 3,
+        id: 4,
         value: null
     },
     {
-        number: 4,
+        id: 5,
+        value: 'X'
+    },
+    {
+        id: 6,
         value: null
     },
     {
-        number: 5,
+        id: 7,
         value: null
     },
     {
-        number: 6,
+        id: 8,
         value: null
     },
     {
-        number: 7,
-        value: null
-    },
-    {
-        number: 8,
-        value: null
-    },
-    {
-        number: 9,
-        value: null
+        id: 9,
+        value: 'O'
     }
 ];
 
