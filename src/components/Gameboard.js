@@ -6,15 +6,17 @@ import '../styles/Gameboard.css';
 const Gameboard = () => {
     const [boardData, setBoardData] = useState(squareData);
 
-    const placeMarker = (id) => {
-        let updateValue = boardData.map(square => {
-            if (square.id === id) {
-                return {...square, value: 'B'};
-            }
-            return square;
-        })
-
-        setBoardData(updateValue);
+    const placeMarker = (id, value) => {
+        if (value === null) {
+            let updateValue = boardData.map(square => {
+                if (square.id === id) {
+                    return {...square, value: 'B'};
+                }
+                return square;
+            })
+    
+            setBoardData(updateValue);
+        }
     }
 
     const buildSquares = boardData.map(square => {
