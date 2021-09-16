@@ -22,8 +22,9 @@ const Gameboard = ({ startGame }) => {
     const buildSquares = boardData.map(square => {
         if (startGame) {
             return <GameSquare key={square.id} onClick={placeMarker} id={square.id} value={square.value} />
-        }
-        return <GameSquare key={square.id} />;
+        } else {
+            return <GameSquare key={square.id} />;
+        };
     })
 
     return (
