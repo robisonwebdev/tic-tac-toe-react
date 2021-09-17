@@ -12,6 +12,8 @@ const Main = ({ playerOne, playerTwo, setPlayerOne, setPlayerTwo }) => {
         <main>
             <h1>Tic-Tac-Toe</h1>
             <Gameboard
+                boardData={boardData}
+                setBoardData={setBoardData}
                 startGame={startGame}
             />
             <ControlBoard
