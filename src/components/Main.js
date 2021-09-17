@@ -17,13 +17,13 @@ const Main = ({ playerOne, playerTwo, setPlayerOne, setPlayerTwo }) => {
             <h1>Tic-Tac-Toe</h1>
             <Gameboard
                 boardData={boardData}
-                resetBoardData={resetBoardData}
                 setBoardData={setBoardData}
                 startGame={startGame}
             />
             <ControlBoard
                 playerOne={playerOne}
                 playerTwo={playerTwo}
+                resetBoardData={resetBoardData}
                 setPlayerOne={setPlayerOne}
                 setPlayerTwo={setPlayerTwo}
                 setStartGame={setStartGame}
