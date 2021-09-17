@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import GameSquare from './GameSquare';
-import squareData from '../squareData';
 import '../styles/Gameboard.css';
 
 const Gameboard = ({ startGame }) => {
-    const [boardData, setBoardData] = useState(squareData);
 
     const placeMarker = (id, value) => {
         if (value === null) {
