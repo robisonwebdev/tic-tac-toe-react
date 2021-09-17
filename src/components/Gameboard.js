@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import GameSquare from './GameSquare';
 import '../styles/Gameboard.css';
 
-const Gameboard = ({ startGame }) => {
+const Gameboard = ({ boardData, setBoardData, startGame }) => {
 
     const placeMarker = (id, value) => {
         if (value === null) {
