@@ -8,11 +8,16 @@ const Main = ({ playerOne, playerTwo, setPlayerOne, setPlayerTwo }) => {
     const [boardData, setBoardData] = useState(squareData);
     const [startGame, setStartGame] = useState(false);
 
+    const resetBoardData = () => {
+        setBoardData(squareData);
+    }
+
     return (
         <main>
             <h1>Tic-Tac-Toe</h1>
             <Gameboard
                 boardData={boardData}
+                resetBoardData={resetBoardData}
                 setBoardData={setBoardData}
                 startGame={startGame}
             />
