@@ -9,6 +9,7 @@ const Header = ({ currentPlayer, playerOneScore, playerTwoScore }) => {
             <PlayerDisplay
                 currentPlayer={currentPlayer}
                 player='X'
+                position='leftPlayerDisplay'
             />
             <Scoreboard
                 gameWinner='X Wins!'
@@ -18,6 +19,7 @@ const Header = ({ currentPlayer, playerOneScore, playerTwoScore }) => {
             <PlayerDisplay
                 currentPlayer={!currentPlayer}
                 player='O'
+                position='rightPlayerDisplay'
             />
         </header>
     );
