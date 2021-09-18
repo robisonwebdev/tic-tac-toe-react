@@ -9,12 +9,12 @@
     width: 90px;
 }
 
-.leftPlayerDisplay {
+.left {
     border-bottom: 1px solid var(--darkBlue);
     border-right: 1px solid var(--darkBlue);
 }
 
-.rightPlayerDisplay {
+.right {
     border-left: 1px solid var(--darkBlue);
     border-bottom: 1px solid var(--darkBlue);
 }
