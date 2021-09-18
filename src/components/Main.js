@@ -6,7 +6,6 @@ import '../styles/Main.css';
 
 const Main = ({ playerOne, playerTwo, setPlayerOne, setPlayerTwo }) => {
     const [boardData, setBoardData] = useState(squareData);
-    const [currentPlayer, setCurrentPlayer] = useState(true);
     const [startGame, setStartGame] = useState(false);
 
     // useEffect(() => {
