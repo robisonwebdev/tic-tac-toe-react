@@ -1,8 +1,8 @@
 import React from 'react';
 
-const PlayerDisplay = ({ player }) => {
+const PlayerDisplay = ({ currentPlayer, player }) => {
     return (
-        <div className='playerDisplay'>
+        <div className={`playerDisplay ${currentPlayer ? 'highlight' : ''}`}>
             <h1>{player}</h1>
         </div>
     );
