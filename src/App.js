@@ -14,6 +14,7 @@ const App = () => {
   return (
     <div className='app'>
       <Header
+        currentPlayer={currentPlayer}
         playerOneScore={playerOneScore}
         playerTwoScore={playerTwoScore}
       />
