@@ -3,7 +3,7 @@ import PlayerDisplay from './PlayerDisplay';
 import Scoreboard from './Scoreboard';
 import '../styles/Header.css';
 
-const Header = ({ playerOneScore, playerTwoScore }) => {
+const Header = ({ currentPlayer, playerOneScore, playerTwoScore }) => {
     return (
         <header>
             <PlayerDisplay player='X' />
