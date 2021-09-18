@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import GameSquare from './GameSquare';
 import '../styles/Gameboard.css';
 
-const Gameboard = ({ boardData, setBoardData, startGame }) => {
+const Gameboard = ({ boardData, currentPlayer, setBoardData, setCurrentPlayer, startGame }) => {
     const placeMarker = (id, value) => {
         if (value === null) {
             let updateValue = boardData.map(square => {
                 if (square.id === id) {
-                    return {...square, value: 'B'};
+                    return {...square, value: currentPlayer ? 'X' : 'O'};
                 }
                 return square;
             })
     
             setBoardData(updateValue);
+            setCurrentPlayer(!currentPlayer);
         }
     };
 
