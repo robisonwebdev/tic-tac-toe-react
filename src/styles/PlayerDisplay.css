@@ -8,3 +8,13 @@
     height: 90px;
     width: 90px;
 }
+
+.leftPlayerDisplay {
+    border-bottom: 1px solid var(--darkBlue);
+    border-right: 1px solid var(--darkBlue);
+}
+
+.rightPlayerDisplay {
+    border-left: 1px solid var(--darkBlue);
+    border-bottom: 1px solid var(--darkBlue);
+}
