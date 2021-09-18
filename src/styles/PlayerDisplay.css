@@ -1,0 +1,10 @@
+.playerDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--tan);
+    color: var(--darkBlue);
+    height: 90px;
+    width: 90px;
+}
