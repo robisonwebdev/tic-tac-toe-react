@@ -18,3 +18,15 @@
     border-left: 1px solid var(--darkBlue);
     border-bottom: 1px solid var(--darkBlue);
 }
+
+.leftHighlight {
+    border-color: var(--liteGreen);
+    box-shadow: -5px -5px 6px 10px var(--liteGreen);
+    -webkit-box-shadow: -5px -5px 6px 10px var(--liteGreen);
+}
+
+.rightHighlight {
+    border-color: var(--liteGreen);
+    box-shadow: 5px -5px 6px 10px var(--liteGreen);
+    -webkit-box-shadow: 5px -5px 6px 10px var(--liteGreen);
+}
