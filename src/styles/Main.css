@@ -11,4 +11,5 @@ main {
 .gameTitle {
     color: var(--liteGreen);
     font-size: 60px;
+    font-weight: normal;
 }
