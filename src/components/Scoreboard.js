@@ -7,7 +7,7 @@ const Scoreboard = ({ gameWinner, playerOneScore, playerTwoScore }) => {
             <div className='scores'>
                 <p>{playerOneScore} | {playerTwoScore}</p>
             </div>
-            <p>{gameWinner}</p>
+            <p className='gameWinnerText'>{gameWinner}</p>
         </div>
     );
 }
