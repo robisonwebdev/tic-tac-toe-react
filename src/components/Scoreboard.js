@@ -5,7 +5,7 @@ const Scoreboard = ({ gameWinner, playerOneScore, playerTwoScore }) => {
     return (
         <div className='scoreboard'>
             <div className='scores'>
-                <p>{playerOneScore} | {playerTwoScore}</p>
+                <h3>{playerOneScore} | {playerTwoScore}</h3>
             </div>
             <p className='gameWinnerText'>{gameWinner}</p>
         </div>
