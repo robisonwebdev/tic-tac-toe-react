@@ -12,3 +12,11 @@
     justify-content: center;
     gap: 5px;
 }
+
+.gameReset button {
+    background-color: var(--white);
+    border: 2px solid var(--liteGreen);
+    font-size: 14px;
+    height: 32px;
+    width: 100px;
+}
