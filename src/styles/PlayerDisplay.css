@@ -5,6 +5,7 @@
 
     background-color: var(--tan);
     color: var(--darkBlue);
+    font-size: 60px;
     height: 90px;
     width: 90px;
 }
