@@ -18,7 +18,7 @@ const Main = ({ currentPlayer, playerOne, playerTwo, setCurrentPlayer, setPlayer
 
     return (
         <main>
-            <h1>Tic-Tac-Toe</h1>
+            <h1 className='gameTitle'>Tic-Tac-Toe</h1>
             <Gameboard
                 boardData={boardData}
                 currentPlayer={currentPlayer}
