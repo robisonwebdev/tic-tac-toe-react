@@ -15,6 +15,14 @@
     color: var(--liteGreen);
 }
 
+.playerLabel input {
+    border: 2px solid var(--white);
+    height: 32px;
+    padding-left: 7px;
+    text-align: center;
+    width: 215px;
+}
+
 .gameReset {
     display: flex;
     flex-direction: column;
