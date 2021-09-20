@@ -1,16 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Gameboard from './Gameboard';
 import ControlBoard from './ControlBoard';
 import squareData from '../squareData';
 import '../styles/Main.css';
 
-const Main = ({ currentPlayer, playerOne, playerTwo, setCurrentPlayer, setPlayerOne, setPlayerTwo }) => {
+const Main = ({ currentPlayer, playerOne, playerTwo, setCurrentPlayer, setGameWinner, setPlayerOne, setPlayerTwo }) => {
     const [boardData, setBoardData] = useState(squareData);
     const [startGame, setStartGame] = useState(false);
-
-    // useEffect(() => {
-    //     console.log('Data Changed');
-    // }, [boardData])
 
     const resetBoardData = () => {
         setBoardData(squareData);
@@ -24,6 +20,7 @@ const Main = ({ currentPlayer, playerOne, playerTwo, setCurrentPlayer, setPlayer
                 currentPlayer={currentPlayer}
                 setBoardData={setBoardData}
                 setCurrentPlayer={setCurrentPlayer}
+                setGameWinner={setGameWinner}
                 startGame={startGame}
             />
             <ControlBoard
