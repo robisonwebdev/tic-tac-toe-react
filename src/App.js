@@ -25,6 +25,7 @@ const App = () => {
         playerOne={playerOne}
         playerTwo={playerTwo}
         setCurrentPlayer={setCurrentPlayer}
+        setGameWinner={setGameWinner}
         setPlayerOne={setPlayerOne}
         setPlayerTwo={setPlayerTwo}
       />
