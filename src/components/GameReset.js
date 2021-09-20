@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
-const GameReset = ({ resetBoardData, setPlayerOne, setPlayerTwo, setShowForm, setShowGameReset, setStartGame }) => {
+const GameReset = ({ resetBoardData, resetScores, setPlayerOne, setPlayerTwo, setShowForm, setShowGameReset, setStartGame }) => {
     const handlePlayAgain = () => {
         setStartGame(true);
         resetBoardData();
@@ -9,6 +9,7 @@ const GameReset = ({ resetBoardData, setPlayerOne, setPlayerTwo, setShowForm, se
 
     const handleQuit = () => {
         resetBoardData();
+        resetScores();
         setPlayerOne('');
         setPlayerTwo('');
         setShowForm(true);
