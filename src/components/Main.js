@@ -9,6 +9,8 @@ const Main = ({ currentPlayer, playerOne, playerTwo, setCurrentPlayer, setGameWi
     const [startGame, setStartGame] = useState(false);
 
     const gameOver = (value) => {
+        setStartGame(false);
+
         if (value === 'X') {
             setGameWinner(`${playerOne} Wins!`);
             updateScore(playerOne);
