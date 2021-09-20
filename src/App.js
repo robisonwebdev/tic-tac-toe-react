@@ -12,6 +12,11 @@ const App = () => {
   const [playerOneScore, setPlayerOneScore] = useState(0);
   const [playerTwoScore, setPlayerTwoScore] = useState(0);
 
+  const resetScores = () => {
+    setPlayerOneScore(0)
+    setPlayerTwoScore(0);
+  }
+
   const updateScore = (winner) => {
     if (winner === playerOne) {
       setPlayerOneScore(playerOneScore + 1);
@@ -32,6 +37,7 @@ const App = () => {
         currentPlayer={currentPlayer}
         playerOne={playerOne}
         playerTwo={playerTwo}
+        resetScores={resetScores}
         setCurrentPlayer={setCurrentPlayer}
         setGameWinner={setGameWinner}
         setPlayerOne={setPlayerOne}
