@@ -4,15 +4,17 @@ import ControlBoard from './ControlBoard';
 import squareData from '../squareData';
 import '../styles/Main.css';
 
-const Main = ({ currentPlayer, playerOne, playerTwo, setCurrentPlayer, setGameWinner, setPlayerOne, setPlayerTwo }) => {
+const Main = ({ currentPlayer, playerOne, playerTwo, setCurrentPlayer, setGameWinner, setPlayerOne, setPlayerTwo, updateScore }) => {
     const [boardData, setBoardData] = useState(squareData);
     const [startGame, setStartGame] = useState(false);
 
     const gameOver = (value) => {
         if (value === 'X') {
             setGameWinner(`${playerOne} Wins!`);
+            updateScore(playerOne);
         } else if (value === 'O') {
             setGameWinner(`${playerTwo} Wins!`);
+            updateScore(playerTwo);
         } else if (null) {
             setGameWinner('Tie game, no winners!');
         }
