@@ -24,7 +24,7 @@ const Gameboard = ({ boardData, currentPlayer, gameOver, setBoardData, setCurren
             let valueTwo = square[1];
             let valueThree = square[2];
 
-            if (valueOne !== "" && valueOne === valueTwo && valueTwo === valueThree) {
+            if (valueOne !== null && valueOne === valueTwo && valueTwo === valueThree) {
                 gameOver(valueOne);
             }
         })
