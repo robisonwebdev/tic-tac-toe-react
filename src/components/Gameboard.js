@@ -48,7 +48,7 @@ const Gameboard = ({ boardData, currentPlayer, gameOver, setBoardData, setCurren
         if (startGame) {
             return <GameSquare key={square.id} onClick={placeMarker} id={square.id} value={square.value} />
         } else {
-            return <GameSquare key={square.id} />;
+            return <GameSquare key={square.id} value={square.value} />;
         };
     });
 
