@@ -1,8 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import GameSquare from './GameSquare';
 import '../styles/Gameboard.css';
 
 const Gameboard = ({ boardData, currentPlayer, setBoardData, setCurrentPlayer, startGame }) => {
+    useEffect(() => {
+        checkForWinner();
+    }, [boardData]);
+
+    const checkForWinner = () => {
+        const combos = [
+            [boardData[0].value, boardData[1].value, boardData[2].value],
+            [boardData[3].value, boardData[4].value, boardData[5].value],
+            [boardData[6].value, boardData[7].value, boardData[8].value],
+            [boardData[0].value, boardData[3].value, boardData[6].value],
+            [boardData[1].value, boardData[4].value, boardData[7].value],
+            [boardData[2].value, boardData[5].value, boardData[8].value],
+            [boardData[0].value, boardData[4].value, boardData[8].value],
+            [boardData[2].value, boardData[4].value, boardData[6].value],
+        ];
+    }
+
     const placeMarker = (id, value) => {
         if (value === null) {
             let updateValue = boardData.map(square => {
