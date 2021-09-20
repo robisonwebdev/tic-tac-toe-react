@@ -3,7 +3,7 @@ import PlayerDisplay from './PlayerDisplay';
 import Scoreboard from './Scoreboard';
 import '../styles/Header.css';
 
-const Header = ({ currentPlayer, playerOneScore, playerTwoScore }) => {
+const Header = ({ currentPlayer, gameWinner, playerOneScore, playerTwoScore }) => {
     return (
         <header>
             <PlayerDisplay
@@ -12,7 +12,7 @@ const Header = ({ currentPlayer, playerOneScore, playerTwoScore }) => {
                 position='left'
             />
             <Scoreboard
-                gameWinner='X Wins!'
+                gameWinner={gameWinner}
                 playerOneScore={playerOneScore}
                 playerTwoScore={playerTwoScore}
             />
