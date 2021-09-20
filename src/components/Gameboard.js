@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import GameSquare from './GameSquare';
 import '../styles/Gameboard.css';
 
-const Gameboard = ({ boardData, currentPlayer, setBoardData, setCurrentPlayer, startGame }) => {
+const Gameboard = ({ boardData, currentPlayer, gameOver, setBoardData, setCurrentPlayer, startGame }) => {
     useEffect(() => {
         checkForWinner();
     }, [boardData]);
@@ -25,7 +25,7 @@ const Gameboard = ({ boardData, currentPlayer, setBoardData, setCurrentPlayer, s
             let valueThree = square[2];
 
             if (valueOne !== "" && valueOne === valueTwo && valueTwo === valueThree) {
-                console.log(`${valueOne} Wins!`);
+                gameOver(valueOne);
             }
         })
     }
