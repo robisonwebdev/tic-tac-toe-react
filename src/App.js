@@ -16,6 +16,7 @@ const App = () => {
     <div className='app'>
       <Header
         currentPlayer={currentPlayer}
+        gameWinner={gameWinner}
         playerOneScore={playerOneScore}
         playerTwoScore={playerTwoScore}
       />
