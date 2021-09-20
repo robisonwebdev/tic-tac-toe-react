@@ -4,7 +4,7 @@ import ControlBoard from './ControlBoard';
 import squareData from '../squareData';
 import '../styles/Main.css';
 
-const Main = ({ currentPlayer, playerOne, playerTwo, setCurrentPlayer, setGameWinner, setPlayerOne, setPlayerTwo, updateScore }) => {
+const Main = ({ currentPlayer, playerOne, playerTwo, resetScores, setCurrentPlayer, setGameWinner, setPlayerOne, setPlayerTwo, updateScore }) => {
     const [boardData, setBoardData] = useState(squareData);
     const [startGame, setStartGame] = useState(false);
 
@@ -41,6 +41,7 @@ const Main = ({ currentPlayer, playerOne, playerTwo, setCurrentPlayer, setGameWi
                 playerOne={playerOne}
                 playerTwo={playerTwo}
                 resetBoardData={resetBoardData}
+                resetScores={resetScores}
                 setPlayerOne={setPlayerOne}
                 setPlayerTwo={setPlayerTwo}
                 setStartGame={setStartGame}
