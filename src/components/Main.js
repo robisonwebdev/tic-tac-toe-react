@@ -42,6 +42,7 @@ const Main = ({ currentPlayer, playerOne, playerTwo, resetScores, setCurrentPlay
                 playerTwo={playerTwo}
                 resetBoardData={resetBoardData}
                 resetScores={resetScores}
+                setGameWinner={setGameWinner}
                 setPlayerOne={setPlayerOne}
                 setPlayerTwo={setPlayerTwo}
                 setStartGame={setStartGame}
