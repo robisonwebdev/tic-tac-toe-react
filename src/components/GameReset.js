@@ -3,6 +3,7 @@ import Button from './Button';
 
 const GameReset = ({ resetBoardData, setPlayerOne, setPlayerTwo, setShowForm, setShowGameReset, setStartGame }) => {
     const handlePlayAgain = () => {
+        setStartGame(true);
         resetBoardData();
     }
 
