@@ -18,6 +18,16 @@ const Gameboard = ({ boardData, currentPlayer, setBoardData, setCurrentPlayer, s
             [boardData[0].value, boardData[4].value, boardData[8].value],
             [boardData[2].value, boardData[4].value, boardData[6].value],
         ];
+
+        combos.forEach(square => {
+            let valueOne = square[0];
+            let valueTwo = square[1];
+            let valueThree = square[2];
+
+            if (valueOne !== "" && valueOne === valueTwo && valueTwo === valueThree) {
+                console.log(`${valueOne} Wins!`);
+            }
+        })
     }
 
     const placeMarker = (id, value) => {
