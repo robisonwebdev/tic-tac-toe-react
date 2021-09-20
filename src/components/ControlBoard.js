@@ -3,7 +3,7 @@ import GameForm from './GameForm';
 import GameReset from './GameReset';
 import '../styles/ControlBoard.css';
 
-const ControlBoard = ({ playerOne, playerTwo, resetBoardData, resetScores, setPlayerOne, setPlayerTwo, setStartGame }) => {
+const ControlBoard = ({ playerOne, playerTwo, resetBoardData, resetScores, setGameWinner, setPlayerOne, setPlayerTwo, setStartGame }) => {
     const [showForm, setShowForm] = useState(true);
     const [showGameReset, setShowGameReset] = useState(false);
 
@@ -25,6 +25,7 @@ const ControlBoard = ({ playerOne, playerTwo, resetBoardData, resetScores, setPl
                 ?   <GameReset
                         resetBoardData={resetBoardData}
                         resetScores={resetScores}
+                        setGameWinner={setGameWinner}
                         setPlayerOne={setPlayerOne}
                         setPlayerTwo={setPlayerTwo}
                         setShowForm={setShowForm}
