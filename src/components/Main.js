@@ -8,6 +8,14 @@ const Main = ({ currentPlayer, playerOne, playerTwo, setCurrentPlayer, setGameWi
     const [boardData, setBoardData] = useState(squareData);
     const [startGame, setStartGame] = useState(false);
 
+    const gameOver = (value) => {
+        if (value === 'X') {
+            setGameWinner(`${playerOne} Wins!`);
+        } else if (value === 'O') {
+            setGameWinner(`${playerTwo} Wins!`);
+        }
+    }
+
     const resetBoardData = () => {
         setBoardData(squareData);
     }
@@ -20,7 +28,7 @@ const Main = ({ currentPlayer, playerOne, playerTwo, setCurrentPlayer, setGameWi
                 currentPlayer={currentPlayer}
                 setBoardData={setBoardData}
                 setCurrentPlayer={setCurrentPlayer}
-                setGameWinner={setGameWinner}
+                gameOver={gameOver}
                 startGame={startGame}
             />
             <ControlBoard
