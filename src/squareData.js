@@ -1,7 +1,7 @@
 let squareData = [
     {
         id: 1,
-        value: 'X'
+        value: null
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ let squareData = [
     },
     {
         id: 5,
-        value: 'X'
+        value: null
     },
     {
         id: 6,
@@ -33,7 +33,7 @@ let squareData = [
     },
     {
         id: 9,
-        value: 'O'
+        value: null
     }
 ];
 
