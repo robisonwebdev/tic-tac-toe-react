@@ -6,6 +6,7 @@ import './styles/App.css';
 
 const App = () => {
   const [currentPlayer, setCurrentPlayer] = useState(true);
+  const [gameWinner, setGameWinner] = useState('');
   const [playerOne, setPlayerOne] = useState('');
   const [playerTwo, setPlayerTwo] = useState('');
   const [playerOneScore, setPlayerOneScore] = useState(0);
