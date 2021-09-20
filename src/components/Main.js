@@ -13,6 +13,8 @@ const Main = ({ currentPlayer, playerOne, playerTwo, setCurrentPlayer, setGameWi
             setGameWinner(`${playerOne} Wins!`);
         } else if (value === 'O') {
             setGameWinner(`${playerTwo} Wins!`);
+        } else if (null) {
+            setGameWinner('Tie game, no winners!');
         }
     }
 
