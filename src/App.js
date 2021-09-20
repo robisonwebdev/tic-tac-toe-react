@@ -12,6 +12,14 @@ const App = () => {
   const [playerOneScore, setPlayerOneScore] = useState(0);
   const [playerTwoScore, setPlayerTwoScore] = useState(0);
 
+  const updateScore = (winner) => {
+    if (winner === playerOne) {
+      setPlayerOneScore(playerOneScore + 1);
+    } else if (winner === playerTwo) {
+      setPlayerTwoScore(playerTwoScore + 1);
+    }
+  }
+
   return (
     <div className='app'>
       <Header
@@ -27,9 +35,8 @@ const App = () => {
         setCurrentPlayer={setCurrentPlayer}
         setGameWinner={setGameWinner}
         setPlayerOne={setPlayerOne}
-        setPlayerOneScore={setPlayerOneScore}
         setPlayerTwo={setPlayerTwo}
-        setPlayerTwoScore={setPlayerTwoScore}
+        updateScore={updateScore}
       />
       <Footer
         address='https://github.com/robisonwebdev'
