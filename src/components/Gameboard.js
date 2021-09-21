@@ -26,8 +26,16 @@ const Gameboard = ({ boardData, currentPlayer, gameOver, setBoardData, setCurren
 
             if (valueOne !== null && valueOne === valueTwo && valueTwo === valueThree) {
                 gameOver(valueOne);
+            } else if (checkForTieGame()) {
+                gameOver(null);
             }
         })
+    }
+
+    const checkForTieGame = () => {
+        const areSquaresFilled = boardData.every(square => square.value !== null);
+
+        return areSquaresFilled;
     }
 
     const placeMarker = (id, value) => {
